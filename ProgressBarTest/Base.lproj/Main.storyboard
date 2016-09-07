@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jx5-Z4-aOl">
+                                <rect key="frame" x="86" y="562" width="429" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="^ Progress bar working while downloading file ^" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-tA-2PG">
+                                <rect key="frame" x="120" y="572" width="360" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2yr-gl-OpJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jx5-Z4-aOl" secondAttribute="trailing" constant="65" id="0fx-9f-Ozj"/>
+                            <constraint firstItem="Jx5-Z4-aOl" firstAttribute="top" secondItem="2yr-gl-OpJ" secondAttribute="bottom" constant="32" id="4DE-x6-7Xb"/>
+                            <constraint firstItem="Jx5-Z4-aOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9q-Kx-BhK"/>
+                            <constraint firstItem="ewg-tA-2PG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K0d-BL-cyh"/>
+                            <constraint firstItem="2yr-gl-OpJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YuP-Bc-TCV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yr-gl-OpJ" secondAttribute="trailing" constant="-20" id="eik-iw-4h2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ewg-tA-2PG" secondAttribute="bottom" constant="7" id="f8H-CF-JGu"/>
+                            <constraint firstItem="Jx5-Z4-aOl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="jqa-sa-58f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jx5-Z4-aOl" secondAttribute="bottom" constant="36" id="nTr-n8-lEL"/>
+                            <constraint firstItem="2yr-gl-OpJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="x0k-yP-zrb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2yr-gl-OpJ" id="Xd9-2d-NZI"/>
+                        <outlet property="progressBar" destination="Jx5-Z4-aOl" id="Bvy-R5-Sjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="306"/>
+        </scene>
+    </scenes>
+</document>
